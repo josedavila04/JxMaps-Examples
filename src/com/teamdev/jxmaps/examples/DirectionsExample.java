@@ -172,7 +172,7 @@ public class DirectionsExample extends MapView implements ControlPanel {
         }
     }
 
-    private void calculateDirection() {
+    private void calculate() {
         // Getting the associated map object
         final Map map = getMap();
         // Creating a directions request
@@ -214,7 +214,7 @@ public class DirectionsExample extends MapView implements ControlPanel {
     public static void main(String[] args) {
         loadAndRegisterCustomFonts();
 
-        JFrame frame = new JFrame("Directions");
+        JFrame frame = new JFrame("direcciones ejemplo");
         final DirectionsExample sample = new DirectionsExample();
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         frame.add(sample, BorderLayout.CENTER);
